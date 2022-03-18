@@ -6,7 +6,7 @@ An incomplete Rust Franca IDL parser crate based on nom.
 
 - [Franca Google Drive](https://drive.google.com/drive/folders/0B7JseVbR6jvhUnhLOUM5ZGxOOG8?resourcekey=0-U-X53hicOvlqAZCG86dCUQ)
 
-# Why Rust, Why not existing solutions
+# Why Rust
 
 One goal of this library is to allow generating Rust SomeIP bindings and clients similar to capicxx-someip-tools.
 This is certainly possible using Xtend and the existing generator, obviously this provides the advantage that all Franca parsing is already taken care of.
@@ -19,7 +19,16 @@ All together, let's see how this turns out. If you want something stable and pro
 
 # Usage
 
-```Rust
+Add this to your `Cargo.toml`:
+
+```toml
+[dependencies]
+franca = "0.1"
+```
+
+```rust
+use franca::parser::f_model;
+
 fn main() {
     const INPUT: &str = "
 package test
@@ -39,7 +48,6 @@ interface HelloWorld {
     }
 }
 ";
-
 
     let (_remaining, model) = f_model(INPUT).unwrap();
     println!("{:#?}", model);
