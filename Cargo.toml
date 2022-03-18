@@ -1,0 +1,13 @@
+[package]
+name = "franca"
+version = "0.1.0"
+license = "MIT"
+description = "An incomplete Rust Franca IDL parser crate based on nom."
+homepage = "https://github.com/marcelbuesing/franca"
+repository = "https://github.com/marcelbuesing/franca.git"
+authors = ["marcelbuesing <buesing.marcel@googlemail.com>"]
+keywords = ["franca", "automotive", "ecu", "idl"]
+edition = "2021"
+
+[dependencies]
+nom = { version = "7.1", features = ["alloc"] }
