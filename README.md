@@ -5,6 +5,9 @@ An incomplete Rust Franca IDL parser crate based on nom.
 # Reference
 
 - [Franca Google Drive](https://drive.google.com/drive/folders/0B7JseVbR6jvhUnhLOUM5ZGxOOG8?resourcekey=0-U-X53hicOvlqAZCG86dCUQ)
+- [FrancaIDL.xtext](https://raw.githubusercontent.com/franca/franca/108a9358c466bb14499d263ed6862c6b649d8c70/plugins/org.franca.core.dsl/src/org/franca/core/dsl/FrancaIDL.xtext)
+- [FDeploy.xtext](https://github.com/franca/franca/blob/108a9358c466bb14499d263ed6862c6b649d8c70/plugins/org.franca.deploymodel.dsl/src/org/franca/deploymodel/dsl/FDeploy.xtext)
+- [Xtext.xtext](https://github.com/eclipse/xtext-core/blob/master/org.eclipse.xtext/src/org/eclipse/xtext/Xtext.xtext)
 
 # Why Rust
 
