@@ -1,5 +1,6 @@
 #![doc = include_str!("../README.md")]
 
+pub mod deploy;
 pub mod parser;
 
 /// Primitive types
@@ -251,3 +252,34 @@ pub enum FAnnotationType {
     SourceAlias,
     Details,
 }
+
+// // https://github.com/franca/franca/blob/108a9358c466bb14499d263ed6862c6b649d8c70/plugins/org.franca.deploymodel.dsl/src/org/franca/deploymodel/dsl/FDeploy.xtext
+// /// 6.1.2 Deployment properties
+// pub struct FDeployment {
+//     /// Properties related to whole Franca IDL interfaces (but not its instances)
+//     interfaces: (),
+//     /// Properties related to Franca type collections
+//     type_collections: (),
+//     /// Properties related to attributes of a Franca IDL interface
+//     attributes: (),
+//     /// Properties related to methods of a Franca IDL interface
+//     methods: (),
+//     broadcasts: (),
+//     arguments: (),
+//     strings: (),
+//     integers: (),
+//     floats: (),
+//     numbers: (),
+//     booleans: (),
+//     byte_buffers: (),
+//     structs: (),
+//     struct_fields: (),
+//     unions: (),
+//     union_fields: (),
+//     enumerations: (),
+//     enumerators: (),
+//     arrays: (),
+//     typedefs: (),
+//     providers: (),
+//     instances: (),
+// }
