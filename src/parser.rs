@@ -305,7 +305,7 @@ pub fn f_broadcast(s: &str) -> IResult<&str, FBroadcast> {
 }
 
 pub fn e_string(s: &str) -> IResult<&str, &str> {
-    let (s, e_str) = take_till(|c: char| !c.is_alphanum() && c != '_' && c != '-')(s)?;
+    let (s, e_str) = take_till(|c: char| !c.is_alphanum() && c != '_' && c != '-' && c != '.')(s)?;
     Ok((s, e_str))
 }
 
